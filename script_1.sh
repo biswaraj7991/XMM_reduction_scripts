@@ -59,6 +59,7 @@ evselect table=EPIC.ds withfilteredset=Y filteredset=EPICclean.ds destruct=Y kee
 evselect table=EPICclean.ds imagebinning=binSize imageset=PNimage.ds withimageset=yes xcolumn=X ycolumn=Y ximagebinsize=80 yimagebinsize=80
 figlet "Finished pre-processing"
 
+echo "Enter extraction region specifications in physical units only"
 
 figlet "pileup"
 mv $pathname/pileup_checker.sh $pathname/spectra_XMM
